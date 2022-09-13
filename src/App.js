@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  var 인사법 = "안녕하세요?";
+  var 이름 = "유재석";
+  // var 자기소개 = 인사법 + "제 이름은\n" + " " + "입니다.";
+
+  // 템플릿 문자열 사용 방법
+  // 1. `${인사법} ${이름}`
+  var 자기소개 = `${인사법} 제 이름은 
+  ${이름}입니다.`;
+  console.log(자기소개);
 }
 
 export default App;
